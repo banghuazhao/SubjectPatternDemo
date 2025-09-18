@@ -10,6 +10,18 @@ A small iOS SwiftUI app showing how to use the **Subject → Publisher pattern**
 - **Reachability (NWPathMonitor)**: Bridge network path updates to a publisher.
 - **UIControl (UITextField)**: Bridge target–action `editingChanged` to a publisher.
 
+## Screenshots
+
+<img src="screenshots/1.png" alt="Demo" width="260" />
+
+## Run
+
+- Open `SubjectPatternDemoApp.xcodeproj` in Xcode 16+.
+- Select the `SubjectPatternDemoApp` scheme and a simulator/device, then press Cmd+R.
+- When prompted, allow Location for the demo.
+
+Notes: Networking uses `https://jsonplaceholder.typicode.com/todos/1`. DisplayLink runs on the main runloop. Reachability uses `NWPathMonitor`.
+
 ## Why This Matters
 
 This pattern is used everywhere in modern Swift frameworks:
